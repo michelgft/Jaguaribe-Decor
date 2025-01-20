@@ -164,7 +164,7 @@ nav button.cta-button:hover {
 
 .produto-card:hover {
     transform: scale(1.05);
-    background-color: rgba(255, 252, 174, 0,5);
+    background-color: #d6ffe6;
 }
 
 .produto-card img {
