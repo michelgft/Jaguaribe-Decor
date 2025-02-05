@@ -76,19 +76,15 @@ nav button.cta-button:hover {
 
 /* Seção Topo */
 .topo {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 50px;
-  flex-wrap: wrap;
-}
-
-.topo .left {
-  max-width: 50%;
 }
 
 .right img {
   max-width: 600px;
+  max-height: 800px;
 }
 
 .topo h1 {
@@ -133,20 +129,18 @@ nav button.cta-button:hover {
 }
 
 .produtos-lista {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  justify-items: center;
 }
 
 .produto-card {
-  width: 280px;
   background-color: #f0f0f0;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
   text-align: center;
-  transition: transform 0.3s;
+  transition: 0.3s;
 }
 
 .produto-card:hover {
@@ -156,7 +150,7 @@ nav button.cta-button:hover {
 
 .produto-card img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .produto-card h3 {
@@ -176,8 +170,14 @@ nav button.cta-button:hover {
 
 /* Produtos em Destaque */
 .produtos-destaque {
+  text-align: center;
   background-color: #f5f5f5;
   padding: 50px 20px;
+}
+
+.produtos-destaque h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
 }
 
 .produto-card.destaque {
@@ -324,11 +324,6 @@ footer .social-media a:hover {
     text-align: center;
   }
 
-  .produtos-lista {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .produtos-lista .produto-card {
     width: 100%;
     max-width: 300px;
@@ -378,7 +373,44 @@ footer .social-media a:hover {
   }
 }
 
+@media (max-width: 682px) {
+  .topo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+    justify-items: center;
+  }
+
+  .produtos-lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+    justify-items: center;
+  }
+}
+
 @media (max-width: 425px) {
+  .topo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .right img {
+    display: none;
+  }
+
+  .produtos-lista {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    justify-items: center;
+  }
+
   .left h1 {
     font-size: 40px;
     line-height: 40px;
