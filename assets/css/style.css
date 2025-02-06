@@ -41,7 +41,7 @@ header {
 }
 
 #logo img {
-  max-width: 150px;
+  max-width: 250px;
 }
 
 nav {
@@ -61,18 +61,6 @@ nav a:hover {
   color: #1d9d74;
 }
 
-/* Botão de contato */
-nav button.cta-button {
-  padding: 12px 20px;
-  border-radius: 6px;
-  background-color: #1d9d74;
-  color: white;
-  font-size: 16px;
-}
-
-nav button.cta-button:hover {
-  background-color: #155c3b;
-}
 
 /* Seção Topo */
 .topo {
@@ -89,8 +77,8 @@ nav button.cta-button:hover {
 
 .topo h1 {
   font-family: "Saira", serif;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 70px;
+  line-height: 80px;
   padding-bottom: 30px;
 }
 
@@ -137,8 +125,7 @@ nav button.cta-button:hover {
 
 .produto-card {
   background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 10px;
+  padding-bottom: 10px;
   text-align: center;
   transition: 0.3s;
 }
@@ -150,7 +137,6 @@ nav button.cta-button:hover {
 
 .produto-card img {
   width: 100%;
-  border-radius: 10px;
 }
 
 .produto-card h3 {
@@ -163,6 +149,7 @@ nav button.cta-button:hover {
   margin-top: 10px;
   color: #1d9d74;
 }
+
 
 .avaliacao i {
   color: #f1c40f;
@@ -257,8 +244,9 @@ footer {
 }
 
 footer .social-media a {
-  color: #ccc;
-  margin: 0 10px;
+  color: #043f07;
+  width: 15px;
+  margin: 0 5px;
 }
 
 footer .social-media a:hover {
