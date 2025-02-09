@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaguaribe Decor</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kumar+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
     
@@ -19,7 +22,7 @@
         </div>
         <nav id="menu">
             <button id="closeMenu">X</button>
-             <a href="#sobre">Sobre</a>
+            <a href="#sobre-jd">Sobre</a>
             <a href="#produtos">Produtos</a>
             <a href="#destaque">Destaque</a>
             <a href="#contato">Contato</a>
@@ -30,9 +33,9 @@
         <!-- Seção Topo -->
         <section class="topo" id="sobre">
             <div class="left">
-                <h1>Inove com<br><span>elegância,</span><br>e viva ao<br>seu estilo</h1>
-                <p>Sinta-se leve, ornamente seu espaço e <br> dê uma vida nova para seu lar.</p>
-
+                <h1>Sofisticação e<br>exclusividade<br>para o seu lar.</h1>
+                <p>Jaguaribe Decor, onde o design<br>e a funcionalidade se encontram. </p>
+                <img class="app" src="/assets/imagens/Mobile App Store Badges.svg" alt="">
             </div>
             <div class="right">
                 <img src="assets/imagens/cactoelement03.png" alt="Decoração Cactos">
@@ -40,18 +43,18 @@
         </section>
 
         <!-- Seção Sobre -->
-        <section id="sobre" class="sobre">
+        <section id="sobre-jd" class="sobre">
             <h2>Sobre</h2>
             <p>Jaguaribe Decor é uma empresa especializada em decoração para ambientes internos e externos. Nosso objetivo é transformar espaços com produtos que trazem personalidade e harmonia para cada cantinho. Oferecemos uma seleção curada de itens de decoração, sempre com qualidade e estilo, para que cada cliente tenha a oportunidade de expressar sua própria identidade.</p>
-        </section>
+        </section>        
 
         <!-- Seção Produtos -->
         <section id="produtos" class="produtos">
             <h2>Nossos Produtos</h2>
             <div class="produtos-lista">
                 <div class="produto-card">
-                    <img src="assets/imagens/08.jpg" alt="Produto 1">
-                    <h3>Cabideiro de Chão</h3>
+                    <a href="/assets/pages/detalhe.html"><img src="/assets/imagens/20.png" alt="Produto 1"></a>
+                    <h3>Luminária de Mesa</h3>
                     <p>De R$ 450,00 por R$ 380,00</p>
                     <div class="avaliacao">
                         <i class="fas fa-star"></i>
@@ -60,13 +63,13 @@
                         <i class="fas fa-star-half-alt"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <a href="#header-topo" class="btn">Ver detalhes</a>
+                    <a href="/assets/pages/detalhe.html" class="btn">Ver detalhes</a>
                 </div>
-
+        
                 <div class="produto-card">
-                    <img src="assets/imagens/01.png" alt="Produto 2">
-                    <h3>Luminária & Vaso</h3>
-                    <p>De R$ 300,00 por R$ 280,00</p>
+                    <img src="/assets/imagens/21.png" alt="Produto 2">
+                    <h3>Relógio de Parede</h3>
+                    <p>De R$ 150,00 por R$ 99,00</p>
                     <div class="avaliacao">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -93,6 +96,20 @@
             </div>
         </section>
 
+         <!-- Galeria -->
+         <section class="galeria">
+            <figure class="item foto-01">
+                <img class="galeria-img" src="/assets/imagens/vaso-foto-texto.png" alt="img-01">
+            </figure>
+            <figure class="item foto-03">
+                <img class="galeria-img" src="/assets/imagens/02.png" alt="img-03">
+            </figure>
+            <figure class="item foto-04">
+                <img class="galeria-img" src="/assets/imagens/13.png" alt="img-03">
+            </figure>
+        </section>
+
+        
         <!-- Seção Produtos em Destaque -->
         <section id="destaque" class="produtos-destaque">
             <h2>Produtos Em Destaques</h2>
@@ -141,16 +158,6 @@
             </div>
         </section>
 
-        <!-- Seção Vasoplanta -->
-        <section class="vasoplanta">
-            <div class="texto">
-                <h1>Tranforme<br>cada canto<br>em arte</h1>
-                <p>Desfrute do melhor<br>no seu dia a dia.</p>
-                <a href="#header-topo" class="btn">Saiba Mais</a>
-            </div>
-            <img src="assets/imagens/10.jpg" alt="Vaso e Planta"> 
-        </section>
-
         <!-- Seção Contato -->
         <section id="contato" class="contato">
             <div class="form">
@@ -164,7 +171,7 @@
             </div>
 
             <div class="map">
-                <h3>Localização</h3>
+                <h2>Localização</h2>
                 <div id="mapa">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.9173254617244!2d-34.87604522610894!3d-7.135558969986364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace810852ae4f1%3A0xaf5445223401f2bb!2sIFPB%20-%20Campus%20Jo%C3%A3o%20Pessoa!5e0!3m2!1spt-BR!2sbr!4v1737316018999!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>   
