@@ -234,6 +234,22 @@ nav a:hover {
 
 .detalhe-produto p {
   padding-top: 30px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.button-detalhes {
+  background-color: #043f07;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 12px 60px;
+  transition: 0.3s;
+}
+
+.button-detalhes:hover {
+  background-color: #132f28;
 }
 
 .divisoria {
@@ -290,7 +306,7 @@ form textarea {
 
 form button {
   padding: 12px 20px;
-  background-color: #132f28;
+  background-color: #043f07;
   color: white;
   font-size: 16px;
   border-radius: 5px;
@@ -298,7 +314,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #155c3b;
+  background-color: #132f28;
 }
 
 /* Rodapé */
