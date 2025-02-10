@@ -454,8 +454,12 @@ footer .social-media a:hover {
   .topo {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
-    align-items: center;
+    align-items: stretch;
+    padding: 10px 0px;
+  }
+
+  .right img {
+    align-items: start;
   }
 
   .produtos-lista {
@@ -469,12 +473,12 @@ footer .social-media a:hover {
   .topo h1 {
     font-size: 30px;
     line-height: 40px;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
   }
 
   .topo p {
     font-size: 18px;
-    padding-bottom: 15px;
+    padding-bottom: 50px;
   }
 
   .vasoplanta .texto h1 {
